@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Reset App State\"}\n  (Session info: chrome=124.0.6367.92)",
-  "stacktrace": "\tGetHandleVerifier [0x00007FF78B231512+60802]\n\t(No symbol) [0x00007FF78B1AAC12]\n\t(No symbol) [0x00007FF78B067CE4]\n\t(No symbol) [0x00007FF78B0B6D4D]\n\t(No symbol) [0x00007FF78B0B6E1C]\n\t(No symbol) [0x00007FF78B0FCE37]\n\t(No symbol) [0x00007FF78B0DABBF]\n\t(No symbol) [0x00007FF78B0FA224]\n\t(No symbol) [0x00007FF78B0DA923]\n\t(No symbol) [0x00007FF78B0A8FEC]\n\t(No symbol) [0x00007FF78B0A9C21]\n\tGetHandleVerifier [0x00007FF78B53412D+3217821]\n\tGetHandleVerifier [0x00007FF78B5760C7+3488055]\n\tGetHandleVerifier [0x00007FF78B56F04F+3459263]\n\tGetHandleVerifier [0x00007FF78B2EB856+823494]\n\t(No symbol) [0x00007FF78B1B5FAF]\n\t(No symbol) [0x00007FF78B1B0ED4]\n\t(No symbol) [0x00007FF78B1B1062]\n\t(No symbol) [0x00007FF78B1A18B4]\n\tBaseThreadInitThunk [0x00007FFF186D257D+29]\n\tRtlUserThreadStart [0x00007FFF1A9EAA48+40]\n"
-}
