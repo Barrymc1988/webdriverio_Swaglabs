@@ -30,7 +30,7 @@ export const config: Options.Testrunner = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './features/**/*.feature'
+        './test/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -60,8 +60,6 @@ export const config: Options.Testrunner = {
     //
     capabilities: [{
         browserName: 'chrome'
-    }, {
-        browserName: 'MicrosoftEdge'
     }],
 
     //
@@ -95,14 +93,14 @@ export const config: Options.Testrunner = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-     baseUrl: 'https://www.saucedemo.com/' ,
+     baseUrl: 'https://www.saucedemo.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 12000,
+    connectionRetryTimeout: 120000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -134,15 +132,12 @@ export const config: Options.Testrunner = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', {outputDir: 'allure-results',
-    disableWebdriverStepsReporting: false,
-    disableWebdriverScreenshotsReporting: true,
-}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/steps.ts'],
+        require: ['./test/features/step-definitions/**/steps.ts'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -160,7 +155,7 @@ export const config: Options.Testrunner = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        tagExpression: '@demo',
+        tagExpression: '',
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
