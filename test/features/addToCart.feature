@@ -1,3 +1,4 @@
+@complete
 Feature: Product page tests
     Scenario Outline: Verify an item is visible in the basket after being selected and added
 
@@ -16,20 +17,18 @@ Feature: Product page tests
             | error_user              | secret_sauce |
             | visual_user             | secret_sauce |
 
-@demo
-     Scenario Outline: Verify an item is removed from the basket after being added
+    Scenario Outline: Verify an item is removed from the basket after being added
 
-Given I navigate to baseURL
+        Given I navigate to baseURL
         When I enter <valid_user> and <password>
         Then I click Login, I login successfully
         When I select the first item on the page
-        Then I successfully remove the item 
+        Then I successfully remove the item
 
-         Examples:
+        Examples:
             | valid_user              | password     |
             | standard_user           | secret_sauce |
             | problem_user            | secret_sauce |
             | performance_glitch_user | secret_sauce |
             | error_user              | secret_sauce |
             | visual_user             | secret_sauce |
-    

@@ -1,3 +1,4 @@
+@complete
 Feature: Successful logout
 
 Scenario Outline:Logout and verify homepage is displayed

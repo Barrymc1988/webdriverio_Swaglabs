@@ -1,3 +1,4 @@
+@complete
 Feature: Login tests
 
     Scenario Outline:Verify a valid user can login with correct login details

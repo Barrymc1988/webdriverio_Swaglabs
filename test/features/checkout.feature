@@ -1,3 +1,4 @@
+@complete
 Feature: Add item to shopping cart
 
     Scenario Outline: Verify an item is visible in the shopping cart after being selected and added

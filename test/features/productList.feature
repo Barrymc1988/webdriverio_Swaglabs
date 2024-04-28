@@ -1,3 +1,4 @@
+@complete
 Feature: Feature name
 
 Scenario Outline: Verify item selected is correct item on click through
