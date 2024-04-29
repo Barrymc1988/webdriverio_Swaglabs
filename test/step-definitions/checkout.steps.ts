@@ -1,6 +1,6 @@
 import { Then } from "@wdio/cucumber-framework";
 
-
+// Complete user details and checkout details to complete a purchase of an item
 Then(/^I want to checkout successfully/, async function () {
     const checkoutBtn = await $('button[data-test="checkout"]');
     await checkoutBtn.click();
@@ -21,7 +21,4 @@ Then(/^I want to checkout successfully/, async function () {
     await expect (browser).toHaveUrl('https://www.saucedemo.com/checkout-complete.html');
   });
   
-  Then(/^I view the basket/, async function () {
-    let cart = await $(".shopping_cart_container");
-    await cart.click();
-  });
+ 

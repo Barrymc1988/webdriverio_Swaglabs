@@ -1,6 +1,6 @@
 import { Then } from "@wdio/cucumber-framework";
 
-
+// Find and click Logout button
 Then(/^I click logout and verify im on the login page/, async function () {
     const logout = await $("=Logout");
     const menu = await $('button[id="react-burger-menu-btn"]');
